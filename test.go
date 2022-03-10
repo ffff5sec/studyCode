@@ -6,11 +6,11 @@ import (
 )
 
 func main() {
-	url := "www.budtit.com"
-	if !strings.HasPrefix(url, "http") {
-		url = url + "http://"
-		fmt.Print(url)
+	url := "http://www.baidu.com"
+
+	if strings.Contains(url, "www") {
+		fmt.Println("cunzai")
 	} else {
-		fmt.Print(url)
+		fmt.Println("bucunzai")
 	}
 }
